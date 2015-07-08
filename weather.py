@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-rgbled.py: Messing around with RGB Led on Rasberry PI
+weather.py: check weather with wunderground api
 """
 
 # from rgbled import *
@@ -26,7 +26,7 @@ def query_api(query_url):
 
 def rain():
     """
-    returns true if it is raining and false if it is not.
+    returns true if it is going to rain today and false if it is not.
     """
     try:
         weather = query_api(url)
