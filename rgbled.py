@@ -4,6 +4,8 @@
 rgbled.py: Messing around with RGB Led on Rasberry PI
 """
 
+import RPi.GPIO as GPIO
+
 # Setup Pins
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(20, GPIO.OUT)
@@ -25,7 +27,7 @@ def green():
   GPIO.output(20, False)
   GPIO.output(21, True)
 
-def end():
+def cleanup():
   print("Reset RGB pins")
   GPIO.cleanup()
 

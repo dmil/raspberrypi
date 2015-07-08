@@ -4,7 +4,7 @@
 main.py - turns light red if I might need an umbrella today, and green if I won't
 """
 
-import rain from weather
+from weather import rain
 import rgbled
 
 if rain():
@@ -12,3 +12,4 @@ if rain():
 else:
     rgbled.green()
 
+rgbled.cleanup()
