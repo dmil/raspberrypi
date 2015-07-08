@@ -4,7 +4,6 @@
 weather.py: check weather with wunderground api
 """
 
-# from rgbled import *
 from urllib2 import Request, urlopen, URLError
 import json
 import logging
