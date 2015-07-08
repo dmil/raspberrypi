@@ -4,11 +4,8 @@
 rgbled.py: Messing around with RGB Led on Rasberry PI
 """
 
-import * from rgbled
-
 # Setup Pins
 GPIO.setmode(GPIO.BCM)
-
 GPIO.setup(20, GPIO.OUT)
 GPIO.setup(21, GPIO.OUT)
 
@@ -33,6 +30,7 @@ def end():
   GPIO.cleanup()
 
 # Main
-reset()
-green()
+if __name__ == '__main__':
+    reset()
+    green()
 
